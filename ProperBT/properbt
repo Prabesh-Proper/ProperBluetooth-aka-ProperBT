@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+# ProperBT - Kali Linux Bluetooth Tool
+# Made by Prabesh-Proper © | Kali Linux Bluetooth Tool
+
+import sys
+import os
+
+# Add src to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+
+from cli_menu import CLIMenu
+
+if __name__ == '__main__':
+    menu = CLIMenu()
+    menu.main_menu()
